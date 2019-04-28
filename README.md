@@ -4,16 +4,14 @@ Milo helps people navigate without the use of hands or limbs. We think it could 
 Our brain-computer interface makes use of electroencephalography (EEG), an affordable, accessible, and non-invasive technique to detect brain activity. Specifically, Milo uses motor imagery signals to turn, by detecting a suppression of the mu rhythm (7-13 Hz) in the sensorimotor cortex (the brain area associated with movement) when users imagine movements. In addition to motor imagery, eye blinking signals and jaw artefacts were used to initiate starts and stops, and to indicate the desire to turn. With Milo, users can toggle between moving forward and stoping by blinking their eyes or clenching their jaw. They can turn left or right by simply thinking about left and right hand movements. We also designed a web application for caregivers, from which they can view the location of the wheelchair user in real time to ensure their safety. A text message is also sent to the caregiver if the user's heart rate is abnormal or a crash occurs. In addition, we implemented assisted-driving features for wall following and object avoidance.
 
 ## Github Navigation
-- [`\offline`](https://github.com/NTX-McGill/NeuroTechX-McGill-2019/tree/master/offline/) contains raw EEG data and scripts for offline analysis and visualization
-	- [`\offline\data`](https://github.com/NTX-McGill/NeuroTechX-McGill-2019/tree/master/offline/data) contains the raw EEG data recorded from consenting and anonymized participants. Each folder contains the recording for a single anonymized and consenting participant. The data collection paradigms are specified in the README.md of each folder
-	- [`\offline\signal_processing`](https://github.com/NTX-McGill/NeuroTechX-McGill-2019/tree/master/offline/signal_processing) contains scripts for signal processing
-	- [`\offline\visualization`](https://github.com/NTX-McGill/NeuroTechX-McGill-2019/tree/master/offline/visualization) contains scripts to vizualize the data
-	- [`\offline\ML`](https://github.com/NTX-McGill/NeuroTechX-McGill-2019/tree/master/offline/ML) contains scripts for feature classification
-- [`\robotics`](https://github.com/NTX-McGill/NeuroTechX-McGill-2019/tree/master/robotics) contains scripts to interface with the Arduino hardware connected to the wheelchair
-- [`\src`](https://github.com/NTX-McGill/NeuroTechX-McGill-2019/tree/master/src/) contains software for the dashboard, the assisted driving features, the caregiver app and the real-time rendering
-	- [`\src\dashboard`](https://github.com/NTX-McGill/NeuroTechX-McGill-2019/tree/master/src/dashboard) contains the **dashboard software as well the instructions to set up and launch it**. This is a **user interface for testing the wheelchair**
-	- [`\src\real-time`](https://github.com/NTX-McGill/NeuroTechX-McGill-2019/tree/master/src/real-time) contains scripts to classify EEG signals acquired in real-time, to send/receive data from the wheelchair, and for assisted driving
-	- [`\src\caregiver-app`](https://github.com/NTX-McGill/NeuroTechX-McGill-2019/tree/master/src/caregiver-app) contains the web app and text messaging for the caregiver
+- [`\offline`](https://github.com/io0/Milo/tree/master/offline) contains scripts for offline analysis and visualization
+	- [`\offline\signal_processing`](https://github.com/io0/Milo/tree/master/offline/signal_processing) contains scripts for signal processing
+	- [`\offline\visualization`](https://github.com/io0/Milo/tree/master/offline/visualization) contains scripts to vizualize the data
+	- [`\offline\ML`](https://github.com/io0/Milo/tree/master/offline/ML) contains scripts for feature classification
+- [`\src`](https://github.com/io0/Milo/tree/master/src) contains software for the dashboard, the assisted driving features, the caregiver app and the real-time rendering
+	- [`\src\dashboard`](https://github.com/io0/Milo/tree/master/src/dashboard) contains the **dashboard software as well the instructions to set up and launch it**. This is a **user interface for testing the wheelchair**
+	- [`\src\wheelchair-code`](https://github.com/io0/Milo/tree/master/src/wheelchair_code) contains scripts to interface with the Arduino hardware connected to the wheelchair
+- [`\location-tracker\admin`](https://github.com/io0/Milo/tree/master/location-tracker/adminp) contains the web app and text messaging for the caregiver
 
 ## Project Pipeline
 ![Project pipeline](/figures/Fig1%20(1).png)
